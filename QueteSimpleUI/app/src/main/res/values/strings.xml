@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Quête Simple UI</string>
-    <string name="wecomeTexte">Welcome to the Wild Code School!</string>
+    <string name="welcomeTextView">Welcome to the Wild Code School!</string>
     <string name="wantToBeWilderCheckBox">Yes, I want to be a Wilder!</string>
     <string name="firstnameEditText">Firstname</string>
     <string name="lastnameEditText">Lastname</string>
-    <string name="AcceptButton">ACCEPT</string>
+    <string name="acceptButton">ACCEPT</string>
+    <string name="congratulationTextView">"Congratulation "</string>
+    <string name="errorToast">Please fill your firstname and lastname!</string>
 </resources>

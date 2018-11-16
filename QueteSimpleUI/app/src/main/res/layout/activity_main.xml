@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:padding="5dp"
-        android:text="@string/wecomeTexte"
+        android:text="@string/welcomeTextView"
         app:layout_constrainedWidth="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -24,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:onClick="onCheckboxClicked"
         android:text="@string/wantToBeWilderCheckBox"
         app:layout_constrainedWidth="false"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +37,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:enabled="false"
         android:hint="@string/firstnameEditText"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxWantBeWilder"
@@ -47,17 +49,34 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/lastnameEditText"
+        android:enabled="false"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@id/editTextFirstname"
-        app:layout_constraintWidth_percent="0.5"/>
+        app:layout_constraintWidth_percent="0.5" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAccept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/AcceptButton"
+        android:enabled="false"
+        android:onClick="onButtonClicked"
+        android:text="@string/acceptButton"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@id/editTextLastname" />
+
+    <TextView
+        android:id="@+id/textViewCongratulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:text="@string/congratulationTextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+    />
 
 
 </android.support.constraint.ConstraintLayout>
