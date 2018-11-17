@@ -1,5 +1,6 @@
 package fr.wcs.blablawild;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
+        // automatically handle clicks on the Home/Up buttonSearchItinerary, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
@@ -49,4 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void searchItinerary(View view) {
+        // called when click on button  searchiterary and go to IterarySearchActivity
+        Intent intent = new Intent(this, ItinerarySearchActivity.class);
+        startActivity(intent);
+    }
+
 }
