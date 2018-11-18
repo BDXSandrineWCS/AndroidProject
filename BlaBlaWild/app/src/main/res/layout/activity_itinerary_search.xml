@@ -45,8 +45,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
         android:ems="10"
+        android:hint="@string/departure_hint_text"
         android:inputType="textPostalAddress"
-        android:text="@string/departure_default_edit_text"
+        android:textColorHint="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewDeparture" />
 
@@ -57,8 +58,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
         android:ems="10"
+        android:hint="@string/destination_hint_text"
         android:inputType="textPostalAddress"
-        android:text="@string/destination_default_edit_text"
+        android:textColorHint="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewDestination" />
 
@@ -68,8 +70,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:ems="10"
+        android:hint="@string/date_hint_text"
         android:inputType="date"
-        android:text="@string/date_default_edit_text"
+        android:textColorHint="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewDate" />
 
