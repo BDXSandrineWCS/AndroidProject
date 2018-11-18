@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void searchItinerary(View view) {
-        // called when click on button  searchiterary and go to IterarySearchActivity
+        // called when click on buttonSearch  searchiterary and go to IterarySearchActivity
         Intent intent = new Intent(this, ItinerarySearchActivity.class);
         startActivity(intent);
     }
